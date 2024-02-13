@@ -10,6 +10,24 @@
     <link rel="stylesheet" type="text/css" href="css/animacao.css">
 </head>
 <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '690222153323941',
+          xfbml      : true,
+          version    : 'v19.0'
+        });
+        FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
     <div class="wallpaper" id="wallpaper" data-image="imagens/fundo.jpg"></div>
     <div class="content">
         <aside class="side">
